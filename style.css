@@ -189,7 +189,7 @@ body {
   font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
   line-height: 1.8;
 
-  max-width: 80ch;
+  max-width: 120ch;
   min-height: 100vh;
   overflow-x: hidden;
   margin: 0 auto;
@@ -315,6 +315,8 @@ kbd {
 table:not(.borders-custom) {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: auto;
   max-width: 100%;
   border-top: var(--border-width-thick) solid var(--table-border-color);
@@ -355,6 +357,7 @@ caption {
   padding: 0 0.25em 0.25em;
   width: 100%;
   margin-left: 0;
+  caption-side: bottom; /* Moves it below the table visually */
 }
 
 caption::before {
@@ -456,6 +459,8 @@ table.borders-custom {
 /* Format figure captions (based on table captions) */
 figure {
   counter-increment: figcaption;
+  display: table;
+  margin: 0 auto; /* centers the figure horizontally */
 }
 figcaption {
   text-align: left;
