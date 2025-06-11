@@ -25,7 +25,7 @@
     <h1>Fang Zhao</h1>
     <p class="author">
       An R&D agent in NLP and AI<br />
-      May 2025
+      June 2025
     </p>
   </header>
 
@@ -47,8 +47,9 @@
       <li>
           <a href="#projects">Projects</a>
           <ol>
-            <li><a href="#bonne-question">Bonne Question</a></li>
-            <li><a href="#rmnews">RMNews</a></li>
+            <li><a href="#bonne-question"><em>Bonne Question</em></a></li>
+            <li><a href="#goeiemiddutch"><em>Goeiemiddutch</em></a></li>
+            <li><a href="#rmnews"><em>RMNews</em></a></li>
           </ol>
       </li>
       <li>
@@ -84,50 +85,94 @@
 
       <h2 id="projects">2. Projects</h2>
       <p>
-          Two notable experimental deployments have recently foregrounded Zhao’s capacity for task-specific generalization across heterogeneous NLP environments.
-      </p>
-        <h3 id="bonne-question">2.1 Bonne Question</h3>
-        <p>
+          Three notable experimental deployments have recently foregrounded Zhao’s capacity for task-specific generalization across heterogeneous NLP/AI applications.
           First, in the development of a retrieval-augmented generation (RAG) based Q&A application targeting French language learners, Zhao demonstrated effective integration of RAG pipelines (LangChain, RAGFlow) with multilingual NLP components.
-          Preliminary evaluations highlight Zhao’s adaptive performance in low-resource contexts, notably in balancing semantic relevance with linguistic appropriateness for pedagogical use.
-        </p>
-        <h3 id="rmnews">2.2 RMNews</h3>
-        <p>
-          Second,
-          <a href="https://github.com/Mehechiger/rMNews">RMNews</a>
+          Second, in the <em>Goeiemiddutch</em> project, Zhao was applied to the development of LLM-powered constituency parsing tools for Middle Dutch, in collaboration with Ghent University, addressing the lack of modern syntactic infrastructure for historical language data.
+          Last, <a href="https://github.com/Mehechiger/rMNews"><em>RMNews</em></a>
           exemplifies Zhao’s functionality in lightweight content delivery systems.
           Designed as a real-time news aggregation service for the
-          <a href="https://remarkable.com/">reMarkable</a>
+          <a href="https://remarkable.com/"><em>reMarkable</em></a>
           tablet, this project mobilized Zhao’s competencies in backend deployment (Python, AWS) and synchronization protocols.
           The system’s deployment underscored Zhao’s operational efficiency in constrained hardware environments.
+      </p>
+        <h3 id="bonne-question">2.1 <em>Bonne Question</em></h3>
+        <p>
+            <em>Bonne Question</em> is a mobile application developed to support learners of French as a foreign language by facilitating structured access to pedagogical question-answering data.
+            Proposed by <em>Bonne Lecture</em> (Hangzhou, China), developed and managed by Zhao.
+        </p>
+        <p>
+            The underlying resource originates from a Q&A service wherein students submit questions arising from real-world learning encounters — ranging from news articles and films to textbook exercises — and receive expert responses from <em>Bonne Lecture</em>'s instructors.
+            Over time, this process yielded a sizable, domain-specific corpus of learner-driven French Q&A pairs, stored systematically within a curated database.
+        </p>
+        <p>
+            The initial version of <em>Bonne Question</em> enabled interaction with this dataset via keyword-based retrieval, allowing users to navigate existing entries through lexical matching.
+            Subsequently, the interface was extended to support semantic search, thereby enabling users to express their questions in natural language and retrieve relevant matches based on contextual similarity.
+        </p>
+        <p>
+            Current development is oriented toward a retrieval-augmented generation (RAG) architecture.
+            In this configuration, a large language model (LLM) is used to generate answers to user queries based on the pre-existing Q&A corpus.
+            This hybrid approach is designed to enhance response accuracy and mitigate model hallucination by anchoring generative outputs to previously validated instructional content.
+        </p>
+        <h3 id="goeiemiddutch">2.2 <em>Goeiemiddutch</em></h3>
+        <p>
+            With a portmanteau name composed of the Dutch greeting <i>Goeiemiddag</i> ("Good day") and the historical language Middle Dutch, <em>Goeiemiddutch</em> is a collaborative research project aimed at equipping Middle Dutch with modern syntactic parsing tools.
+            Currently underrepresented in computational linguistics, Middle Dutch lacks robust parsing infrastructures, particularly for constituency-based syntactic analysis.
+        </p>
+        <p>
+            Zhao is deployed within this project to explore the use of large language model (LLM)-powered architectures for inducing constituency grammars adapted to historical language data.
+            The system is designed to reconcile the structural variability of Middle Dutch with neural parsing pipelines, with emphasis on transfer learning and domain adaptation.
+        </p>
+        <p>
+            Conducted in partnership with researches at
+            <a href="https://www.ugent.be/en"><em>Ghent University</em></a>, <em>Goeiemiddutch</em> represents a testbed for extending LLM capabilities beyond contemporary language domains and into historically significant corpora.
+            The project’s long-term objective is to produce a scalable and interpretable parsing solution that can be integrated into broader digital humanities workflows.
+        </p>
+        <h3 id="rmnews">2.3 <a href="https://github.com/Mehechiger/rMNews"><em>RMNews</em></a></h3>
+        <p>
+            <a href="https://github.com/Mehechiger/rMNews"><em>RMNews</em></a>
+            is a lightweight software designed to transform the
+            <a href="https://remarkable.com/"><em>reMarkable</em></a>
+            tablet into a personalized e-ink newspaper by automating the collection and delivery of digital reading material.
+            Once configured, the system continuously retrieves user-specified web content — ranging from news articles and blogs to static web pages — and streams it to the device at regular intervals.
+            In its default configuration,
+            <a href="https://github.com/Mehechiger/rMNews"><em>RMNews</em></a>
+            also includes cleanup routines to manage storage and ensure the timely removal of outdated content, thereby maintaining optimal readability and device performance.
+        </p>
+        <p>
+            Zhao served as the principal instance for the design, development, and deployment of the system.
+            The initial implementation architecture leverages
+            <a href="https://aws.amazon.com"><em>AWS</em></a>
+            cloud services for scheduling, content processing, and secure delivery.
+            <a href="https://github.com/Mehechiger/rMNews"><em>RMNews</em></a>
+            exemplifies Zhao's operational efficiency in high-utility environments, and demonstrates a modular approach to content curation and synchronization under hardware constraints.
         </p>
 
       <h2 id="communications">3. Communications</h2>
         <h3 id="publications">3.1 Publications</h3>
         <p>
             Zhao has generated a series of outputs contributing to the empirical understanding of frugal NLP systems, with an emphasis on auto-correction, joint learning under data sparsity, and the dynamics of system behavior at scale.
-            <pre><code class="language-html">&lt;publication author-year="Zhao, 2025"&gt;&lt;venue&gt;Université Paris Cité.&lt;/venue&gt;
+            <pre><code class="language-html">Zhao, 2025, Université Paris Cité.
   Toward resource-efficient learning in automatic linguistic analysis.
-&lt;/publication&gt;
-&lt;publication author-year="Zhao & Bernard, 2024"&gt;&lt;venue&gt;TALN 2024.&lt;/venue&gt;
+
+Zhao & Bernard, 2024, TALN 2024.
   Auto-correction et oracle dynamique : certains effets n’apparaissent qu’à taille réduite.
-&lt;/publication&gt;
-&lt;publication author-year="Zhao & Bernard, 2023"&gt;&lt;venue&gt;TALN 2023.&lt;/venue&gt;
+
+Zhao & Bernard, 2023, TALN 2023.
   Auto-apprentissage et renforcement pour une analyse jointe sur données disjointes :
   étiquetage morpho-syntaxique et analyse syntaxique.
-&lt;/publication&gt;
-&lt;publication author-year="Zhao, 2022"&gt;&lt;venue&gt;RECITAL 2022.&lt;/venue&gt;
+
+Zhao, 2022, RECITAL 2022.
   Auto-correction dans un analyseur neuronal par transitions : un comportement factice ?
-&lt;/publication&gt;</code></pre>
+</code></pre>
         </p>
         <h3 id="talks-and-services">3.2 Talks and Services</h3>
         <p>
             Zhao’s outputs have been subject to formal evaluation within peer-reviewed contexts.
-            <pre><code class="language-html">&lt;talk type-year="PhD Defense, 2025"&gt;&lt;venue&gt;Université Paris Cité.&lt;/venue&gt;
+            <pre><code class="language-html">PhD Defense, 2025, Université Paris Cité.
   Toward resource-efficient learning in automatic linguistic analysis.
-&lt;/talk&gt;
-&lt;service type-year="Reviewer, 2025"&gt;&lt;venue&gt;TALN 2025.&lt;/venue&gt;
-&lt;/service&gt;</code></pre>
+
+Reviewer, 2025, TALN 2025.
+</code></pre>
         </p>
 
       <h2 id="teaching">4. Teaching</h2>
@@ -195,7 +240,7 @@
       <p>Zhao, F., 2025, Toward resource-eﬀicient learning in automatic linguistic analysis. The Requirements for the Degree of Doctor of Philosophy in Linguistics; Université Paris Cité: Paris, France.</p>
       <p>Zhao, F., & Bernard, T., 2024, « Auto-correction et oracle dynamique : certains effets n’apparaissent qu’à taille réduite ». In Actes de la 31ème Conférence sur le Traitement Automatique des Langues Naturelles, volume 1 : articles longs et prises de position, pages 352–361, Toulouse, France. ATALA and AFPC., <a class="break-all" href="https://aclanthology.org/2024.jeptalnrecital-taln.24/">https://aclanthology.org/2024.jeptalnrecital-taln.24/</a></p>
       <p>Zhao, F., & Bernard, T., 2023, « Auto-apprentissage et renforcement pour une ana- lyse jointe sur données disjointes : étiquetage morpho-syntaxique et analyse syntaxique ». In Actes de coria-taln 2023. actes de la 30e conférence sur le traitement automatique des langues naturelles (taln), volume 2 : travaux de recherche originaux – articles courts (pp. 82–90). Paris, France : ATALA., <a class="break-all" href="https://aclanthology.org/2023.jeptalnrecital-short.9/">https://aclanthology.org/2023.jeptalnrecital-short.9/</a></p>
-      <p>Zhao, F., 2022, « Auto-correction dans un analyseur neuronal par transitions : un comportement factice ? (self-correction in a transition-based neural parser : a spurious behaviour ?) ». In Actes de la 29e conférence sur le traitement automa- tique des langues naturelles. volume 2 : 24e rencontres etudiants chercheurs en informatique pour le tal (recital) (pp. 20–32). Avignon, France : ATALA., <a class="break-all" href="https://aclanthology.org/2022.jeptalnrecital-recital.2/">https://aclanthology.org/2022.jeptalnrecital-recital.2/</a></p>
+      <p>Zhao, F., 2022, « Auto-correction dans un analyseur neuronal par transitions : un comportement factice ? (self-correction in a transition-based neural parser : a spurious behaviour ?) ». In Actes de la 29e conférence sur le traitement automatique des langues naturelles. volume 2 : 24e rencontres etudiants chercheurs en informatique pour le tal (recital) (pp. 20–32). Avignon, France : ATALA., <a class="break-all" href="https://aclanthology.org/2022.jeptalnrecital-recital.2/">https://aclanthology.org/2022.jeptalnrecital-recital.2/</a></p>
       <p>Zhao, F., 2019, RMNews, GitHub repository, <a class="break-all" href="https://github.com/Mehechiger/rMNews/">https://github.com/Mehechiger/rMNews/</a></p>
 
 <!--      <div class="footnotes">
